@@ -1,0 +1,22 @@
+[build]
+  publish = "public"
+
+# Sustituye replace-with-your-backend.example por el dominio HTTPS del servidor que ejecute server.js.
+# Ejemplo: https://api.tudominio.com
+[[redirects]]
+  from = "/api/*"
+  to = "https://replace-with-your-backend.example/api/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/media/*"
+  to = "https://replace-with-your-backend.example/media/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/preview/*"
+  to = "https://replace-with-your-backend.example/preview/:splat"
+  status = 200
+  force = true
