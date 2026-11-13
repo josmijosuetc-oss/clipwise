@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f7f6f2"><title>Clipwise — tus mejores momentos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="#"><span class="brand-mark">◈</span> clipwise</a><span class="top-note"><i></i> Tu estudio de clips con IA</span></header>
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span>✦</span> DE UN VIDEO LARGO A LO MEJOR</div>
+      <h1>Encuentra el momento.<br><em>Hazlo un clip.</em></h1>
+      <p class="intro">Pega el enlace de tu video y descubre sus mejores momentos. Descarga cada clip para compartirlo donde quieras.</p>
+      <form id="video-form" class="link-box">
+        <span class="link-icon">↗</span><input id="video-url" type="url" placeholder="Pega aquí el enlace de tu video…" required aria-label="Enlace del video">
+        <button id="submit-btn" type="submit"><span>Encontrar clips</span><b>→</b></button>
+      </form>
+      <div class="form-foot"><span>◉</span> Videos de YouTube y otros sitios compatibles con yt-dlp <span class="dot">·</span> hasta 1 GB</div>
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+    </section>
+    <section id="results" class="results hidden">
+      <div class="results-head"><div><div class="section-kicker">SELECCIÓN PARA TI</div><h2>Momentos destacados</h2><p id="video-meta" class="video-meta"></p></div><span id="clip-count" class="count-pill"></span></div>
+      <div id="clips" class="clip-grid"></div>
+    </section>
+    <section class="how"><div class="how-title">ASÍ DE FÁCIL</div><div class="steps"><div><span>01</span><b>Pega tu enlace</b><p>Usa la URL de un video público.</p></div><div><span>02</span><b>Hallamos los momentos</b><p>Buscamos segmentos con menos silencios.</p></div><div><span>03</span><b>Descarga y comparte</b><p>Guarda cada clip MP4 por separado.</p></div></div></section>
+    <footer>Hecho para que lo bueno no se pierda entre horas de video. <span>✳</span></footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
